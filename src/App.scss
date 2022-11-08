@@ -1,0 +1,205 @@
+$first-color: #1ddafd;
+$second-color:#a5abb3;
+$third-color:#0053cf;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// --------------------------------------------- Header-------------------------
+.header{
+    .img-fluid{
+        max-height: 100px;
+        max-width: 100px;
+
+    }
+    span{
+        font-size: 35px;
+        color: $first-color;
+        font-weight: 700;
+    }
+    .header-btn{
+        padding: 10px 20px;
+        color: $first-color;
+        background: transparent;
+        font-weight: 900;
+        font-size: 19px;
+        border-radius: 10px;
+        border: 2px solid $first-color;
+    }
+}
+// -------------------------------------------------Footer-----------------------
+
+.footer {
+  
+ 
+  .footer-line {
+    
+    font-weight: bold;
+    
+  }
+  
+}
+//------------------------------------------------LoginPage------------------
+// .loginpage {
+//     position: relative;
+//     height: 100vh;
+//     width: 100%;
+//     display: flex;
+//     .l-left{
+//         .img-box{
+//             position: relative;
+//             width: 100%;
+//             height: 100%;
+//         }
+//         .img-box::before{
+//             content: '';
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             background: linear-gradient(225deg,#e91e63,#03a9f4);
+//             z-index: 1;
+//             mix-blend-mode: screen;
+//         }
+//         img{
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+//     }
+//   .l-right {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .content-box {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       height: 100%;
+//       width: 50%;
+//     //   border: 2px solid black;
+//     }
+//     form {
+//     //   border: 2px solid black;
+//       label {
+//         color: #607d8b;
+//         font-weight: 500;
+//       }
+//       input{
+//         width: 100%;
+//         padding: 10px 20px;
+//         outline: none;
+//         font-weight: 500;
+//         color:  #607d8b;
+//         border: 1px solid  #607d8b;
+//         background: transparent;
+//         border-radius: 2rem;
+//       }
+//       input[ type="submit"]{
+//         background-color: #ff4584 ;
+//         color: white;
+//         font-weight: 500;
+//         border: none;
+//         outline: none;
+//         opacity: 0.8;
+//       }
+//       input[ type="submit"]:hover{
+//           opacity: 1;
+//       }
+//       input[ type="checkbox"]{
+//          width: 10%;
+//          margin-top: 10px;
+//          margin-bottom: 10px;
+//       }
+//       p{
+//         color: #607d8b;
+//         a{
+//             color: #ff4584;
+//         }
+//       }
+//     }
+//     h2 {
+//       color: #607d8b;
+//       font-weight: 600;
+//       font-size: 1.5rem;
+//       text-transform: uppercase;
+//       border-bottom: 4px solid #ff4584;
+//       display: inline;
+//       letter-spacing: 1px;
+//     }
+//     h4{
+//         font-weight: 500;
+//         color: #607d8b;
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 600px){
+	
+// }
+//---------------------------------------------------hero---------------------------
+.hero{
+    .hero-h1{
+        color: $third-color;
+    }
+    .hero-left{
+        .card{
+            border: 1px solid $third-color;
+            box-shadow: 5px 10px 0px 5px $third-color;
+        }
+        .hero-p{
+            color: $second-color;
+            font-weight: 500;
+           
+        }
+        .hero-h4{
+            color: $third-color;
+        }
+    }
+    
+}
+//----------------------------------------------------Cards---------------------------
+.cards{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    .card-topimg{
+        max-height: 100px;
+        max-width: 100px;
+       display: block;
+       margin: auto;
+    }
+    h5{
+       font-weight: 700;
+    }
+    .card{
+        border: 1px solid $third-color;
+        box-shadow: 5px 10px $third-color;
+    }
+    .card-btn{
+        color: $first-color;
+        border: 2px solid $first-color;
+        padding: 8px 70px;
+        font-weight: 700;
+        margin: auto;
+        display: block;
+        font-size: 19px;
+        border-radius: 10px;
+    }
+    .card-btn:hover{
+       color: white;
+       background-color: $first-color;
+    }
+    .card-h4{
+        color: $third-color;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .card-f{
+        color: $second-color;
+    }
+}
