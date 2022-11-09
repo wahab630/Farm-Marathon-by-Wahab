@@ -1,25 +1,20 @@
 import React from 'react'
-import { useLocation } from "react-router-dom";
 
-const Cardpage = () => {
 
-    const location = useLocation();
-    // console.log(location.state)
-    const value = location.state;
-
+const Firstcard = () => {
+    
   return (
     <>
-    <div className="cardpage">
-        <div className="container">
+    <div className="firstcard">
+        
+    <div className="container">
             <div className="row">
                 <div className="col-lg-12 text-center top">
                     
-                    <img src={value.img} alt="no"
-                    className='cardpage-img' />
-                   
-                   
-                    <h1>{value.textfirst}</h1>
-                    <p>Deposit {value.textfirst} Tokens and Earn MRACE</p>
+                    <img src="https://farms.marathoncash.com/assets/logo-cr.png" alt="no"
+                    className='cardpage-img' />                  
+                     <h1>MRACE</h1>
+                    <p>Deposit MRACE Tokens and Earn MRACE</p>
                 </div>
             </div>
             <div className="row below my-3 ">
@@ -28,11 +23,11 @@ const Cardpage = () => {
               <div className="card-body">
                 <div className='d-flex justify-content-between'>
                   <div >
-                    <img src="https://farms.marathoncash.com/assets/logo-cr.png" alt="no"
+                    <img src="https://farms.marathoncash.com/assets/coin/GMT94.png" alt="no"
                      className='img-fluid ' />
                   </div>
                   <div className='d-flex align-items-center text-center'>
-                    <h4 className='fw-bold text-center '>MRACE</h4>
+                    <h4 className='fw-bold text-center '>GMT</h4>
                   </div>
                 </div>
                 <div>
@@ -57,11 +52,11 @@ const Cardpage = () => {
               <div className="card-body">
                 <div className='d-flex justify-content-between'>
                   <div >
-                    <img src={value.img} alt="no"
+                    <img src="https://farms.marathoncash.com/assets/logo-cr.png" alt="no"
                      className='img-fluid ' />
                   </div>
                   <div className='d-flex align-items-center text-center'>
-                    <h4 className='fw-bold text-center '>{value.textfirst}</h4>
+                    <h4 className='fw-bold text-center '>MRACE</h4>
                   </div>
                 </div>
                 <div>
@@ -88,4 +83,4 @@ const Cardpage = () => {
   )
 }
 
-export default Cardpage
+export default Firstcard

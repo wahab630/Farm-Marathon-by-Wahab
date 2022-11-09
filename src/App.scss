@@ -6,6 +6,19 @@ $third-color: #0053cf;
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+ width: 5px;
+
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+ 
+ background: blue;
+ border-radius: 10px;
+}
 // --------------------------------------------- Header-------------------------
 .header {
   .img-fluid {
@@ -26,12 +39,24 @@ $third-color: #0053cf;
     border-radius: 10px;
     border: 2px solid $first-color;
   }
+  .header-btn:hover {
+    color: white;
+      background-color: $first-color;
+  }
 }
 // -------------------------------------------------Footer-----------------------
 
 .footer {
   .footer-line {
     font-weight: bold;
+  }
+  .footer-heading{
+    color: $first-color;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
   }
 }
 //------------------------------------------------LoginPage------------------
@@ -145,6 +170,10 @@ $third-color: #0053cf;
     display: flex;
     justify-content: space-between;
   }
+  p {
+    color: $second-color;
+    font-weight: 700;
+  }
   .hero-left {
     .img-fluid {
       height: 130px;
@@ -182,7 +211,7 @@ $third-color: #0053cf;
       color: white;
       background-color: $first-color;
     }
-    .hero-p {
+    p {
       color: $second-color;
       font-weight: 500;
     }
@@ -199,6 +228,9 @@ $third-color: #0053cf;
 .cards {
   padding-top: 60px;
   padding-bottom: 30px;
+  h1{
+    color: $third-color;
+  }
   .card-topimg {
     max-height: 100px;
     max-width: 100px;
@@ -288,4 +320,58 @@ $third-color: #0053cf;
     }
     
   }
+}
+//------------------------------------------------first card---------------------
+.firstcard{
+    .top {
+        .cardpage-img {
+          height: 94px;
+          width: 94px;
+        }
+        h1 {
+          color: $third-color;
+          font-weight: 700;
+        }
+        p {
+          font-weight: 600;
+          color: $second-color;
+        }
+      }
+      .below {
+        .cardp-left {
+          .img-fluid {
+            height: 130px;
+            width: 130px;
+          }
+          .card {
+            border: 1px solid $third-color;
+            box-shadow: 5px 10px 0px 5px $third-color;
+            h4 {
+              font-weight: 900;
+              color: $third-color;
+            }
+            button {
+              color: $first-color;
+              border: 2px solid $first-color;
+              padding: 8px 70px;
+              font-weight: 700;
+              margin: auto;
+              display: block;
+              font-size: 19px;
+              border-radius: 10px;
+            }
+            button:hover {
+              color: white;
+              background-color: $first-color;
+            }
+            p {
+           
+                color: $second-color;
+                font-weight: 700;
+              }
+          }
+          
+        }
+        
+      } 
 }

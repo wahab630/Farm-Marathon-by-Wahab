@@ -20,12 +20,12 @@ const Footer = () => {
             </div>
             <div className="col-lg-6 text-end">
               <h1 className="fw-bold mb-3">Join Our Community</h1>
-              <ul className="list-unstyled d-flex justify-content-end">
-                <li className="me-2">  <FaMedium size={30}/> </li>
-                <li className="me-2"> <FaTwitter size={30}/> </li>
-                <li className="me-2">  <FaFacebookF size={30}/> </li>
-                <li className="me-2">  <FaYoutube size={30}/> </li>
-                <li className="me-2">  <FaTelegram size={30}/> </li>
+              <ul className="list-unstyled d-flex justify-content-end mt-5">
+                <li className="me-2 text-muted">  <FaMedium size={20}/> </li>
+                <li className="me-2 text-muted"> <FaTwitter size={20}/> </li>
+                <li className="me-2 text-muted">  <FaFacebookF size={20}/> </li>
+                <li className="me-2 text-muted">  <FaYoutube size={20}/> </li>
+                <li className="me-2 text-muted">  <FaTelegram size={20}/> </li>
               </ul>
              
             </div>

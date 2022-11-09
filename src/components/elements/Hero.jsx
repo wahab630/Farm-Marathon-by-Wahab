@@ -1,7 +1,12 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+  const navigate=useNavigate();
+
+    const gotofirstcard=()=>{
+          navigate('/firstcard');
+    }
   return (
     <>
     <div className="hero">
@@ -12,9 +17,9 @@ const Hero = () => {
             <p className='hero-p'>Stake your tokens to earn more $MRACE.</p>
           </div>
         </div>
-        <div className="row">
+        <div className="row gy-4">
           <div className="col-lg-6 hero-left">
-            <div className="card px-5">
+            <div className="card px-5 h-100">
               <div className="card-body">
                 <div className='d-flex justify-content-between'>
                   <div>
@@ -77,7 +82,9 @@ const Hero = () => {
                   
                   
                 </div>
-                <button className='btn hero-btn'>Select</button>
+                <button className='btn hero-btn' onClick={()=>{
+                  gotofirstcard()
+                }}>Select</button>
               </div>
             </div>
           </div>

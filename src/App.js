@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import Base from './components/layouts/Base';
 import Home from './pages/Home';
 import Cardpage from './components/elements/Cardpage';
+import Firstcard from './components/elements/Firstcard';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route index path='/' element={ <Home/>} ></Route>
       <Route path='/cardpage' element={ <Cardpage/>} ></Route>
+      <Route path='/firstcard' element={ <Firstcard/>} ></Route>
     </Routes>
     </Base>
     </Router>
