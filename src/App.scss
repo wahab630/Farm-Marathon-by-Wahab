@@ -1,44 +1,38 @@
 $first-color: #1ddafd;
-$second-color:#a5abb3;
-$third-color:#0053cf;
+$second-color: #a5abb3;
+$third-color: #0053cf;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 // --------------------------------------------- Header-------------------------
-.header{
-    .img-fluid{
-        max-height: 100px;
-        max-width: 100px;
-
-    }
-    span{
-        font-size: 35px;
-        color: $first-color;
-        font-weight: 700;
-    }
-    .header-btn{
-        padding: 10px 20px;
-        color: $first-color;
-        background: transparent;
-        font-weight: 900;
-        font-size: 19px;
-        border-radius: 10px;
-        border: 2px solid $first-color;
-    }
+.header {
+  .img-fluid {
+    max-height: 100px;
+    max-width: 100px;
+  }
+  span {
+    font-size: 35px;
+    color: $first-color;
+    font-weight: 700;
+  }
+  .header-btn {
+    padding: 10px 20px;
+    color: $first-color;
+    background: transparent;
+    font-weight: 900;
+    font-size: 19px;
+    border-radius: 10px;
+    border: 2px solid $first-color;
+  }
 }
 // -------------------------------------------------Footer-----------------------
 
 .footer {
-  
- 
   .footer-line {
-    
     font-weight: bold;
-    
   }
-  
 }
 //------------------------------------------------LoginPage------------------
 // .loginpage {
@@ -140,66 +134,158 @@ $third-color:#0053cf;
 // }
 
 // @media only screen and (max-width: 600px){
-	
+
 // }
 //---------------------------------------------------hero---------------------------
-.hero{
-    .hero-h1{
-        color: $third-color;
+.hero {
+  .hero-h1 {
+    color: $third-color;
+  }
+  .second-card-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-left {
+    .img-fluid {
+      height: 130px;
+      width: 130px;
     }
-    .hero-left{
-        .card{
-            border: 1px solid $third-color;
-            box-shadow: 5px 10px 0px 5px $third-color;
-        }
-        .hero-p{
-            color: $second-color;
-            font-weight: 500;
-           
-        }
-        .hero-h4{
-            color: $third-color;
-        }
+
+    .card {
+      border: 1px solid $third-color;
+      box-shadow: 5px 10px 0px 5px $third-color;
     }
-    
+    p {
+      color: $second-color;
+      font-weight: 700;
+    }
+    .hero-h4 {
+      color: $third-color;
+    }
+  }
+  .hero-right {
+    .card {
+      border: 1px solid $third-color;
+      box-shadow: 5px 10px 0px 5px $third-color;
+    }
+    .hero-btn {
+      color: $first-color;
+      border: 2px solid $first-color;
+      padding: 8px 70px;
+      font-weight: 700;
+      margin: auto;
+      display: block;
+      font-size: 19px;
+      border-radius: 10px;
+    }
+    .hero-btn:hover {
+      color: white;
+      background-color: $first-color;
+    }
+    .hero-p {
+      color: $second-color;
+      font-weight: 500;
+    }
+    .img-fluid {
+      height: 130px;
+      width: 130px;
+    }
+    h4 {
+      color: $third-color;
+    }
+  }
 }
 //----------------------------------------------------Cards---------------------------
-.cards{
-    padding-top: 60px;
-    padding-bottom: 30px;
-    .card-topimg{
-        max-height: 100px;
-        max-width: 100px;
-       display: block;
-       margin: auto;
+.cards {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  .card-topimg {
+    max-height: 100px;
+    max-width: 100px;
+    display: block;
+    margin: auto;
+  }
+  h5 {
+    font-weight: 700;
+  }
+  .card {
+    border: 1px solid $third-color;
+    box-shadow: 5px 10px $third-color;
+  }
+  .card-btn {
+    color: $first-color;
+    border: 2px solid $first-color;
+    padding: 8px 70px;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+    font-size: 19px;
+    border-radius: 10px;
+  }
+  .card-btn:hover {
+    color: white;
+    background-color: $first-color;
+  }
+  .card-h4 {
+    color: $third-color;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .card-f {
+    color: $second-color;
+  }
+}
+//---------------------------------------------------Cardpage-----------------------
+.cardpage {
+  .top {
+    .cardpage-img {
+      height: 94px;
+      width: 94px;
     }
-    h5{
-       font-weight: 700;
+    h1 {
+      color: $third-color;
+      font-weight: 700;
     }
-    .card{
+    p {
+      font-weight: 600;
+      color: $second-color;
+    }
+  }
+  .below {
+    .cardp-left {
+      .img-fluid {
+        height: 130px;
+        width: 130px;
+      }
+      .card {
         border: 1px solid $third-color;
-        box-shadow: 5px 10px $third-color;
+        box-shadow: 5px 10px 0px 5px $third-color;
+        h4 {
+          font-weight: 900;
+          color: $third-color;
+        }
+        button {
+          color: $first-color;
+          border: 2px solid $first-color;
+          padding: 8px 70px;
+          font-weight: 700;
+          margin: auto;
+          display: block;
+          font-size: 19px;
+          border-radius: 10px;
+        }
+        button:hover {
+          color: white;
+          background-color: $first-color;
+        }
+        p {
+       
+            color: $second-color;
+            font-weight: 700;
+          }
+      }
+      
     }
-    .card-btn{
-        color: $first-color;
-        border: 2px solid $first-color;
-        padding: 8px 70px;
-        font-weight: 700;
-        margin: auto;
-        display: block;
-        font-size: 19px;
-        border-radius: 10px;
-    }
-    .card-btn:hover{
-       color: white;
-       background-color: $first-color;
-    }
-    .card-h4{
-        color: $third-color;
-        font-weight: 700;
-        margin-top: 10px;
-    }
-    .card-f{
-        color: $second-color;
-    }
+    
+  }
 }

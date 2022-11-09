@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const data = [
   {
@@ -44,6 +45,12 @@ const data = [
 ];
 
 const Cards = () => {
+  const navigate = useNavigate();
+
+  const component=(v)=>
+  {
+    navigate("/Cardpage", {state:v});
+  }
   return (
     <>
       <div className="cards">
@@ -53,7 +60,7 @@ const Cards = () => {
           {data.map((v, i) => {
             return (
               <>
-                <div className="col-lg-3 gy-4">
+                <div className="col-lg-3 gy-4" key={i}>
                     <div className="card">
                       <div className="card-body">
                         <div>
@@ -71,7 +78,11 @@ const Cards = () => {
                         <div>
                           <hr />
                         </div>
-                        <button className="btn card-btn">Select</button>
+                        <button className="btn card-btn" onClick={()=>
+                            {
+                                component(v)
+                            }} 
+                            >Select</button>
                       </div>
                     </div>
                   </div>

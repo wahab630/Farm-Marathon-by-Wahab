@@ -4,6 +4,7 @@ import './App.scss';
 import { BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import Base from './components/layouts/Base';
 import Home from './pages/Home';
+import Cardpage from './components/elements/Cardpage';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <Base>
     <Routes>
       <Route index path='/' element={ <Home/>} ></Route>
-      
+      <Route path='/cardpage' element={ <Cardpage/>} ></Route>
     </Routes>
     </Base>
     </Router>
